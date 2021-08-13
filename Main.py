@@ -16,8 +16,10 @@ class Footballer(Person):
 
 names = open('names.txt','r',encoding="utf8")
 list = names.readlines()
-list = list[0].split(sep="-") + list[1].split(sep='-')
-L, LA = list, []
+lname = []
+for i in range(len(list)):
+    lname = lname+list[i].split(sep='-')
+L, LA = lname, []
 
 for i in range(int(len(L)/2)):
     ch = choice(L)
