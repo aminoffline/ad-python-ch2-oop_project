@@ -17,7 +17,6 @@ class Footballer(Person):
 names = open('names.txt','r',encoding="utf8")
 list = names.readlines()
 list = list[0].split(sep="-") + list[1].split(sep='-')
-LEN = len(list)
 
 L, LA = list, []
 
