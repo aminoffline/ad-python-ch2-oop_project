@@ -19,17 +19,17 @@ list = names.readlines()
 list = list[0].split(sep="-") + list[1].split(sep='-')
 LEN = len(list)
 
-L = list
-LA =[]
+L, LA = list, []
+
 for i in range(11):
     ch = choice(L)
     LA.append(ch)
     L.pop(L.index(ch))
 LB = L
-A = Footballer()
-B = Footballer()
-A_Squad= A.Build_team(LA)
-B_Squad = B.Build_team(LB)
+
+A, B = Footballer(), Footballer()
+A_Squad, B_Squad = A.Build_team(LA) , B.Build_team(LB)
+
 print('A')
 for name in A_Squad:
     a = name.name
