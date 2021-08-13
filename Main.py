@@ -34,11 +34,11 @@ for name in A_Squad:
     a = name.name
     a = a.replace(" ","")
     a = a.replace('\n',"")
-    print(a ,"Team A")
+    print(f"Team A : {a}")
 
 for name in B_Squad:
     b = name.name
     b = b.replace(" ","")
     b = b.replace('\n',"")
-    print(b ,"Team B")
+    print(f"Team B : {b}")
 
