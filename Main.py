@@ -28,16 +28,15 @@ LB = L
 A, B = Footballer(), Footballer()
 A_Squad, B_Squad = A.Build_team(LA) , B.Build_team(LB)
 
-print('A')
 for name in A_Squad:
     a = name.name
     a = a.replace(" ","")
     a = a.replace('\n',"")
-    print(a)
-print('B')
+    print(a ,"Team A")
+
 for name in B_Squad:
     b = name.name
     b = b.replace(" ","")
     b = b.replace('\n',"")
-    print(b)
+    print(b ,"Team B")
 
